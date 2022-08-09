@@ -12,7 +12,7 @@
 }
 
 .avatar {
-  background-image: url(profile.jpg);
+  background-image: url("profile.jpg");
   filter: brightness(120%) grayscale(20%);
 }
 
