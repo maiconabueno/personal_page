@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="main.css">
+  <title>Psychic Robot</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="container__heading-big">Psychic robot</h1>
+        <h3 class="container__heading-small">Tell me about my future!</h3>
+        <form action="#" class="container__form" id="form">
+            <input type="text" placeholder="Your full name" class="container__form--name" id="firstName" autocomplete="off" required>
+            <button type="button" id="submit-soulmate" class="btn">submit</button><br>
+            <br>
+            <!-- <a href="index.html" class="home-btn btn">back</a> -->
+        </form>
+
+        <div class="soulmate" style="display:none" id="grid">
+            <p class="soulmate__results" id="future"></p>
+            <a href="future.html" class="soulmate__btn btn">restart</a>
+        </div>
+        <a href="index.html" class="btn-home btn">back</a>
+    </div>
+  
+    <script src="js/future.js"></script>
+</body>
+
+</html>

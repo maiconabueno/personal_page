@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(to bottom, #349fad, #0082c8, #2058d3);
+    height: 100vh;
+    position: relative;
+    text-shadow: 0px 1px 2px #000;
+}
+
+.container {
+    width: 40%;
+    /* height: 40%; */
+    /* background-color: rgba(255, 255, 255, 0.747); */
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* margin-top: 30%; */
+    border-radius: 15px;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    /* color: #fff; */
+    text-align: center;
+    color: #021330;
+    box-shadow: 1px 5px 20px rgba(4, 15, 78, 0.479);
+}
+
+.app-title {
+    /* width: 40%; */
+    /* text-align: center; */
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1rem;
+    /* padding: 10px; */
+    text-shadow: 1px 1px 3px #000;
+}
+
+.notification {
+    background-color: #e9c7ca;
+    margin: 10px 0;
+    /* width: 100%; */
+    display: none;
+}
+
+.notification p {
+    color: #6b161f;
+    font-size: 1.2rem;
+    /* text-align: center; */
+    padding: 10px 0;
+
+}
+
+.weather-container {
+    /* width: 300px; */
+    height: 22rem;
+    /* background-color: #f4f9ff; */
+    /* background-color: #0878b4a6; */
+    background-image: linear-gradient(to bottom, #257c88 -150%, #0082c8, #2059d369 170%);
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px solid rgb(2, 28, 58);
+    box-shadow: 0 0 5px inset;
+}
+
+.weather-icon img {
+    display: block;
+    margin: 0 auto;
+    /* background-image: #031e4d;
+    clip-path: text; */
+}
+
+.temperature-value p {
+    /* color: #031e4d; */
+    font-size: 4rem;
+}
+
+.temperature-value span {
+    /* color: #031e4d; */
+    font-size: .5em;
+}
+
+.temperature-description p {
+    padding: 12px;
+    text-shadow: 2px 1px 2px #000;
+    /* font-size: 1em; */
+}
+
+.location p {
+    font-size: .7em;
+}

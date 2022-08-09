@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+body {
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #09203f91 0%, #537895 74%);
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 100vh;
+    /* position: relative; */
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: .3rem;
+    opacity: .6;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    /* position: fixed; */
+}
+
+form {
+    max-width: 100%;
+    width: 30rem;
+    margin: auto;
+
+    
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+}
+
+.container {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    /* top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%); */
+}
+
+.input {
+    padding: 1rem 1.3rem;
+    display: block;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    opacity: .8;
+    margin-bottom: 2rem;
+    color: rgb(49, 47, 47);
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0 3px 10px #000;
+}
+
+.todos {
+    /* background-color: rgba(255, 255, 255, 0.993); */
+    list-style-type: none;
+    /* padding-left: .5rem; */
+    
+}
+
+.todos li {
+    font-size: 1.2rem;
+    padding: .7rem;
+    margin-bottom: 1rem;
+    /* margin: 0; */
+    /* color: rgba(0, 0, 0, 0.925); */
+    /* margin-top: 1rem; */
+    color: rgb(63, 59, 59);
+    background-color: rgba(227, 238, 181, 0.993);
+    font-weight: 600;
+    width: 30rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 600) {
+    .todos li {
+        width: 100%;
+    }
+}
+
+.todos li.completed {
+    background-color: rgba(159, 235, 165, 0.993);
+    text-decoration: line-through;
+    color: rgba(56, 54, 54, 0.445);
+}
+
+small {
+    color: #e7e7e7a8;
+    /* display: inline-block; */
+    margin: auto;
+    line-height: 1.4rem;
+    text-align: center;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/styles.css">
+	<title>Quiz</title>
+</head>
+<body>
+	<div class="quiz" id="quiz">
+        <div class="quiz__header">
+            <h3 class="quiz__question" id="question">Question text</h3>
+            <ul>
+                <li class="radioStyle">
+                    <input type="radio" id="a" name="answer" class="radioHide answer"/>
+                    <span class="radioBtn"></span>
+                    <label id="a-text" for="a">Question</label>
+                </li>
+                <li class="radioStyle">
+                    <input type="radio" id="b" name="answer" class="radioHide answer"/>
+                    <span class="radioBtn"></span>
+                    <label id="b-text" for="b">Question</label>
+                </li>
+                <li class="radioStyle">
+                    <input type="radio" id="c" name="answer" class="radioHide answer"/>
+                    <span class="radioBtn"></span>
+                    <label id="c-text" for="c">Question</label>
+                </li>
+                <li class="radioStyle">
+                    <input type="radio" id="d" name="answer" class="radioHide answer"/>
+                    <span class="radioBtn"></span>
+                    <label id="d-text" for="d">Question</label>
+                </li>
+            </ul>
+            
+        </div>
+        <button class="quiz__btn" id="submit">Submit</button>
+    </div>
+    
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

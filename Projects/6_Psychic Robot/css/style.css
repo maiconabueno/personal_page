@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Quintessential&family=Rubik+Glitch&family=Splash&display=swap');
+
+
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    /* background-color: #22006b; */
+    box-sizing: border-box;
+}
+
+body {
+    background-image: radial-gradient(#2124c0, #22006b);
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    font-family:'Eater', cursive;
+}
+
+/* font-family: 'Eater', cursive;
+font-family: 'Quintessential', cursive;
+font-family: 'Rubik Glitch', cursive;
+font-family: 'Splash', cursive; */

@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&family=Eater&family=Press+Start+2P&family=Rubik+Glitch&display=swap');
+
+$outline-color: rgb(255, 1, 149);
+
+@mixin margin-bottom() {
+    margin-bottom: 5rem;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: radial-gradient(#f0cccc, #db7777);
+    // background-image: radial-gradient(#e5edee 0%, #f3b8b8 20%, #e5a2e7 50%, #db7777 90%);
+    // background-image: radial-gradient(#e6a3a3 0%, #d095e2 50%, #db7777 90%, #ec6363 100%);
+    height: 100vh;
+    width: 100vw;
+    color: red;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    position: relative;
+    
+}
+
+::placeholder {
+    color: rgb(75, 74, 74);
+    font-family: 'Eater', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    // box-shadow: 0 1px 20px rgb(216, 99, 99);
+    // border-radius: 10px;
+    padding: 5rem;
+
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%,-50%);
+    text-align: center;
+
+    &__heading-big {
+        color: rgb(150, 20, 20);
+        margin-bottom: 1rem;
+        line-height: 5.5rem;
+        letter-spacing: .4rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    @media (max-width: 600px) {
+        &__heading-big {
+            line-height: 2.3rem;
+            font-size: 1.7rem;
+            letter-spacing: initial;
+        }
+    }
+
+    &__heading-small {
+        font-family: 'Press Start 2P', cursive;
+        color: red;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: 930px) {
+        &__heading-small {
+            font-size: 1.5rem;
+            padding-bottom: .5rem;
+        }
+    }
+
+    &__options,
+    &__options:link,
+    &__options:visited {
+        margin: 3rem auto;
+
+    }
+    
+    @media (max-width: 1000px) {
+        &__options,
+        &__options:link,
+        &__options:visited {
+            margin: .5rem auto;
+        }
+    }
+
+    &__form {
+
+        &--name {
+            padding: .7rem 2rem;
+            display: block;
+            border-radius: 50px;
+            border: 3px solid red;
+            font-family: 'Eater', cursive;
+            outline:none;
+            font-size: 1.5rem;
+            width: 35vw;
+            // width: 100px;
+            min-width: 290px;
+            background-color: rgba(255, 255, 255, 0.411);
+            box-shadow: 0 2px 30px rgb(255, 255, 255);  
+            
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            &--name {
+                padding: .2rem 1rem;
+                // width: 10px;
+            }
+        }
+
+        &--name:hover {
+            transform: translateY(-3px);
+        }
+
+        &--name:active,
+        &--name:focus {
+            box-shadow: 0 2px 30px $outline-color;
+            border: 3px solid $outline-color;
+        }
+
+        &--result {
+            padding-top: 1rem;
+            font-family: 'Rubik Glitch', cursive;
+            display: inline-block;
+            margin-right: 2rem;
+            font-size: 2.5rem;
+            text-shadow: 0 2px 10px rgb(235, 207, 207);
+        }
+
+        @media (max-width: 700px) {
+            &--result {
+                font-size: 2rem;
+            }
+        }
+    }
+
+
+
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 5rem 1rem;
+    }
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    width: 17vw;
+    min-width: 250px;
+    border: none;
+    margin-top: .2rem;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0 3px 20px rgb(170, 24, 24);
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(109, 235, 240);
+    display: inline-block;
+
+    font-family: 'Press Start 2P', cursive;    
+    font-size: 1.5rem;
+
+    &:hover {
+        transform: translateY(-3px);
+        // box-shadow: 10px 10px 30px rgb(0, 0, 0);
+        box-shadow: 10px 10px 30px rgb(170, 24, 24);
+    }
+
+    &:active {
+        transform: translateY(0px);
+        box-shadow: none;
+    }
+
+    &:focus {
+        box-shadow: 0 0 30px $outline-color;
+        outline: none;
+        border: 3px solid $outline-color;
+    }
+
+    &-home {
+        position: absolute;
+        top: .7rem;
+        left: 1.5rem;
+        width: 7vw;
+        min-width: 100px;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+
+#result {
+    font-size: 3rem;
+    font-family: 'Eater', cursive;
+    text-shadow: 0 2px 10px rgb(175, 22, 22);
+}
+
+// font-family: 'Arima', cursive;
+// font-family: 'Eater', cursive;
+// font-family: 'Press Start 2P', cursive;
+// font-family: 'Rubik Glitch', cursive;
+
+.u-margin-bottom {
+    @include margin-bottom();
+}
+
+@media (max-width: 1000px) {
+    .u-margin-bottom {
+        margin-bottom: 2rem;
+    }
+}
+
+.soulmate {
+    &__results {
+        color: rgb(226, 19, 19);
+        color: rgb(240, 13, 13);
+        // text-shadow: 1px 1px 4px rgb(255, 253, 253);
+        font-family: 'Arima', cursive;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+        // font-weight: 600;
+    }
+
+    &__btn {
+        // position: absolute;
+        // top: 100%;
+    }
+}
+
+.text__results {
+    color: #000;
+
+}
+
+.resultEl {
+    font-weight: bold;
+}
+
+// .row {
+//     display: grid;
+
+//     &::after {
+//         content: "";
+//         clear: both;
+//         display: table;
+//     }
+// }
+
+// .col-1-of-3 {
+//     font-family: 'Arima', cursive;
+//     float: left;
+//     text-align: left;
+//     width: calc(100%/3);
+//     font-size: 1.5rem;
+// }
+
+// .col-2-of-3 {
+//     font-family: 'Arima', cursive;
+//     float: left;
+//     text-align: left;
+//     width: calc(2*(100%/3));
+//     font-size: 1.5rem;
+// }

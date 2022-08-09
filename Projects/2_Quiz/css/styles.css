@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 10px; */
+    /* background-color: rgb(187, 206, 231); */
+}
+
+body {
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.quiz {
+    background-color: rgba(255, 255, 255, 0.418);
+    border-radius: 20px;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.685);
+    width: 30rem;
+    /* height: 25rem;
+    padding-bottom: 3rem; */
+    max-width: 100%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.quiz__header {
+    padding: 3rem;
+}
+
+.quiz__question {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.quiz__btn {
+    background-color: #0652DD;
+    display: block;
+    width: 100%;
+    top: .5rem;
+    position: relative;
+    /* height: 5rem; */
+    padding: 2rem;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    font-family: inherit;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    /* box-shadow: 10px 100px 100px rgba(100, 100, 100); */
+}
+
+.quiz__btn:hover {
+    background-color: #0e47b3;
+    text-shadow: 1px 1px 10px #3eadcf;
+}
+
+/* input:focus {
+    background: #2ce068;
+    outline: 5px solid #1cb44ffd;   
+
+} */
+
+.radioStyle {
+    position: relative;
+    padding-left: 2.4rem;
+}
+
+.radioBtn {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 5px solid #0652DD;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.radioBtn::after {
+    content: '';
+    display: block;
+    height: .6rem;
+    width: .6rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0652DD;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.answer:checked ~ .radioBtn::after {
+    opacity: 1;
+}
+
+.radioHide {
+    display: none;
+}
+
+.quiz__btn:focus {
+    outline: none;
+    border-left: 4px solid #2ce068;
+    border-right: 4px solid #2ce068;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
