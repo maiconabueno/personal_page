@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+}
+
+html {
+//This defines what 1rem is
+//100% is 16px
+  font-size: 62.5%;
+
+  @include respond(tab-land) { // <1200
+    font-size: 56.25%;
+  }
+  
+  @include respond(tab-port) { // < 900
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) { 
+    font-size: 75%;
+  }
+}
+
+body {
+  /*to avoid the margin/padding being added to the total size of an element */
+  box-sizing: border-box;
+}
