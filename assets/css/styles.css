@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.gradient {
+  background: linear-gradient(120deg, #3e29e7, #0ea0ff);
+  color: #fff;
+}
+
+.organization {
+  background-color: #4e98ff;
+}
+
+.avatar {
+  background-image: url(/profile.jpg);
+  filter: brightness(120%) grayscale(20%);
+}
+
+.project_content {
+  height: 30vh;
+  margin: 1rem 0;
+  /* box-shadow: 1px 5px 10px rgba(0,0,0,0); */
+}
+
+.project_content {
+  /* border: 1px solid orangered; */
+}
+
+.spacing {
+  margin-right: 10%;
+}
