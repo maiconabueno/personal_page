@@ -150,6 +150,7 @@ body {
 .mainContainer {
     width: 93vw;
     height: 70vh;
+    
     /* position: absolute;
     left: 6rem;
     top: 8rem; */
@@ -159,6 +160,7 @@ body {
     animation-name: fadeIn;
     animation-duration: 2s;
     position: relative;
+    /* max-height: fit-content; */
 }
 
 
@@ -314,6 +316,10 @@ body {
     position: absolute;
     margin-bottom: 2rem;
     display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 59vh;
+    width: auto;
 }
 
 @media (max-width: 1200px) {
@@ -337,6 +343,7 @@ body {
     box-shadow: 1px 1px 200px inset rgba(235, 98, 98, 0.411);
     width: 83%;
     cursor: pointer;
+    margin-left: 1.3rem;
 }
 
 .meal-header {
