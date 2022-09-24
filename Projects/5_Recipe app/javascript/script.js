@@ -209,23 +209,17 @@ function popupInfo(mealData) {
     mealPopup.appendChild(mealEl);
 
     mealPopup.classList.remove("hidden");
-
-// -------------------------------------------------WHY ISN'T THIS WORKING?
-
-    // popupCloseBtn.addEventListener("click", () => {
-    //     console.log("teste");
-    //     mealPopup.classList.add("hidden");
-    // });
-
-
 }
 
 function closeFn() {
     mealPopup.classList.add("hidden");
 }
 
-
-// https://www.youtube.com/watch?v=dtKciwk_si4&t=135s&ab_channel=FlorinPop
-// 2:08:38
-//https://www.themealdb.com/api.php
+//Enter key as submit for search
+searchTerm.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("search").click();
+    }
+});
 
