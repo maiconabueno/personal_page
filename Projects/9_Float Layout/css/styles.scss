@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+$gap: 5px;
+$primary-color-dark: #799903; 
+$primary-color-light: #DAE5B3;
+$tertiary-color: #27C2E5;
+$second-color-dark: #990B0B;
+$second-color-light: #128099;
+
+// $primary-color-dark: #996903; 
+// $primary-color-light: #E6A210;
+// $tertiary-color: #1CCFE6;
+// $second-color-dark: #993322;
+// $second-color-light: #E64227;
+
+$text-color: rgba(255, 255, 255, 0.699);
+
+body {
+  background-color: $primary-color-light;
+  color: $text-color;
+}
+
+[class^="col-"] {
+  float: left;
+  border-radius: 10px;
+  // box-shadow: 1px 2px 20px rgba(0,0,0, .2);
+  margin: .1rem 0 .5rem 0;
+  // padding: 10px 0 0 10px;
+  background-color: $primary-color-dark;
+  // overflow: visible;
+  
+}
+
+[class^="col-"]:not(:last-child) {
+  margin-right: $gap;
+}
+
+h2 {
+  padding: .5rem;
+  // position: absolute;
+  // top: 3px;
+  // text-align: center;
+}
+
+.row {
+  // background-color: #fff;
+  
+p {
+  padding: .5rem;
+}
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.floatContainer {
+  margin: 2rem 1rem;
+  
+}
+
+// COLUMNS
+.col-1-of-1 {
+  background-color: $second-color-dark;
+  width: 100%;
+  color: white;
+}
+
+.col-1-of-2 {
+  background-color: $tertiary-color;
+  width: calc((100% - #{$gap}) / 2);
+}
+
+.col-2-of-3 {
+  background-color: $second-color-light;
+  width: calc(2 * ((100% - 2 * #{$gap}) / 3) + #{$gap});
+}
+
+.col-1-of-3 {
+  // background-color: #1CFD96;
+  width: calc((100% - 2 * #{$gap}) / 3);
+}
+
+.col-1-of-4 {
+  // background-color: #29E5FA;
+  width: calc((100% - 3 * #{$gap}) / 4);
+}
+
+.col-2-of-4 {
+  background-color: $second-color-dark;
+  width: calc(2 * ((100% - 3 * #{$gap}) / 4) + #{$gap});
+}
+
+.col-1-of-5 {
+  
+  width: calc((100% - 4 * #{$gap}) / 5);
+}
+
+.col-2-of-5 {
+  // background-color: #5551FD;
+  width: calc(2 * ((100% - 4 * #{$gap}) / 5) + #{$gap});
+}
+
+.col-3-of-5 {
+  
+  width: calc((3 * ((100% - 4 * #{$gap}) / 5)) + 2 * #{$gap});
+}
+
+.col-4-of-5 {
+  // background-color: #8397FD;
+  width: calc(((4 * ((100% - 4 * #{$gap}) / 5)) + 3 * #{$gap}))
+}
+
+.col-1-of-6 {
+  background-color: $tertiary-color;
+  color: #fff;
+  width: calc((100% - 5 * #{$gap}) / 6);
+}
+
+.col-2-of-6 {
+  // background-color: #FDE983;
+  width: calc((2 * ((100% - 5 * #{$gap}) / 6)) + #{$gap});
+}
+
+.col-1-of-10 {
+  background-color: $second-color-light;
+  width: calc((100% - 9 * #{$gap}) / 10);
+}
+
+.col-2-of-10 {
+  // background-color: #40BD67;
+  width: calc(2 * ((100% - 9 * #{$gap}) / 10) + #{$gap});
+}
+
+.col-3-of-10 {
+  // background-color: #BD406C;
+  width: calc(3 * ((100% - 9 * #{$gap}) / 10) + 2 * #{$gap});
+}
+
+.col-4-of-10 {
+  // background-color: #229E9C;
+  width: calc(4 * ((100% - 9 * #{$gap}) / 10) + 3 * #{$gap});
+}
+
+.col-5-of-10 {
+  // background-color: #40BD49;
+  width: calc(5 * ((100% - 9 * #{$gap}) / 10) + 4 * #{$gap});
+}
+
+.col-6-of-10 {
+  // background-color: #40BDB6;
+  width: calc(6 * ((100% - 9 * #{$gap}) / 10) + 5 * #{$gap});
+}
+
+.text {
+  height: 2rem;
+  // position: relative;
+  height: min-content;
+}
+
+.white {
+  color: #fff;
+}
+
+.paddingbtm {
+  padding-bottom: 2.5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.extrapadd {
+  padding: .5rem .5rem 0 .5rem;
+}
+
+//TODO
+//fix the whites
