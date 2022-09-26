@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .gradient {
   background: linear-gradient(120deg, #3e29e7, #0ea0ff);
   color: #fff;
