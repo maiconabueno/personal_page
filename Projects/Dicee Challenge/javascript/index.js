@@ -15,4 +15,4 @@ if (randomNumber1 == randomNumber2) {
 } else {
   textH1 = "Player 2 Wins!";
 }
-document.querySelector("h1").innerHTML=textH1;
+document.getElementById("result").innerHTML=textH1;
