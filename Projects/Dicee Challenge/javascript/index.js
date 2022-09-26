@@ -9,10 +9,10 @@ document.querySelector("img.img2").setAttribute("src", "images/dice" + randomNum
 
 // Changing text of the h1 element
 if (randomNumber1 == randomNumber2) {
-  textH1 = "Draw!";
+  textH1 = "Draw! (Refresh Me!)";
 } else if (randomNumber1 > randomNumber2) {
-  textH1 = "Player 1 Wins!";
+  textH1 = "Player 1 Wins! (Refresh Me!)";
 } else {
-  textH1 = "Player 2 Wins!";
+  textH1 = "Player 2 Wins! (Refresh Me!)";
 }
-document.getElementById("result").innerHTML=textH1;
+document.querySelector("h1").innerHTML=textH1;
