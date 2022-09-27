@@ -429,6 +429,9 @@ body {
     top: 5%;
     overflow: auto;
     position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 90vh;
 }
 
 @media (max-width: 900px) {
